@@ -39,8 +39,9 @@ public class CClient extends Thread {
 
     public void MsgParser(String msg) throws IOException {
         String []tokens = msg.split("#");
-        
-        switch (MsgType){
+
+        MsgType Msgtype = MsgType.CLIENTIDS;
+        switch (Msgtype){
             case MsgType.CLIENTIDS -> {
             }
         }
